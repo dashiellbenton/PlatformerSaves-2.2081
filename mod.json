@@ -1,10 +1,10 @@
 {
-	"geode": "4.9.0",
+	"geode": "5.6.0",
 	"gd": {
-		"win": "2.2074",
-		"android": "2.2074",
-		"mac": "2.2074",
-		"ios": "2.2074"
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
 	},
 	"version": "v1.1.2",
 	"id": "sabe.platformersaves",
@@ -22,25 +22,15 @@
 		"gameplay"
 	],
 	"dependencies": {
-		"geode.custom-keybinds": {
-			"version": ">=v1.6.0",
-			"platforms": [
-				"win",
-				"android",
-				"mac-intel",
-                "mac-arm"
-			],
-			"importance": "required"
-		},
 		"geode.node-ids": {
 			"version": ">=v1.12.0-beta.4",
 			"importance": "required"
 		},
 		"sabe.persistenceapi": {
-			"version": "v1.1.0",
+			"version": "v1.2.0",
 			"importance": "required"
 		}
-    },
+	},
 	"settings": {
 		"auto-save": {
 			"default": true,
@@ -77,6 +67,13 @@
 			"name": "Updated save file warning",
 			"description": "Show a warning when opening a save file that was updated from a previous PlatformerSaves version.",
 			"type": "bool"
+		},
+		"save-game": {
+			"default": "K",
+			"name": "Save game",
+			"description": "Hotkey for quick saving.",
+			"type": "keybind",
+			"category": "gameplay"
 		}
 	},
 	"incompatibilities": [
